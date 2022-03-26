@@ -54,8 +54,7 @@ nav h1{
 
 /* Para que los links no se vean azules y subrayados, ponemos esto! */
 
-nav a,
-footer a{
+a{
     text-decoration: none;
 }
 
@@ -77,20 +76,20 @@ section{
 
 section h2{
     font-size: 4rem;
-    color: white;
+    color: #000000;
 }
 
 section ol,
 footer ol{
     font-size: 2rem;
-    color: black;
+    color: #FFFFFF;
 }
 
  /* Estos van a ser los rectangulitos "blancos" donde estará nuestra información. No sé si dejarle colorcitos cálidos, como ahora, o dejarlo completamente blanco. Como uds quieran! */
 
  .contenido{
-    background: #ffede7;
-    min-height: 80vh;
+    background: #000000;
+    min-height: 100vh;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -99,32 +98,36 @@ footer ol{
 
 /* Estilo de los textos dentro de los contenidos! */
 
-div h3{
-    font-size: 3.5rem;
+div h3,
+div p{
+    color: #FFFFFF;
     text-align: center;
 }
 
+div h3{
+    font-size: 3rem;
+}
+
 div p{
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 2rem;
 }
 
 /* Estos son los cuadrados gigantes de colores y el footer */
 
 .intro{
-    background: #6E48AA;
+    background: #6f23c7;
 }
 .equipo{
-    background: #0575E6;
+    background: #1475d6;
 }
 .proyecto{
-    background: #4c922b;
+    background: #49ad1a;
 }
 .ejemplos{
-    background: #cea166;
+    background: #ca7f1c;
 }
 .conclusion{
-    background:#d04ed6;
+    background:#f060f8;
 }
 .fin{
     background: #999999;
@@ -146,23 +149,22 @@ span{
 }
 
 .spanIntro{
-    color: #6E48AA;
+    color: #6f23c7;
 }
 .spanEquipo{
-    color: #0575E6;
+    color: #1475d6;
 }
 .spanProyecto{
-    color: #56ab2f;
+    color: #49ad1a;
 }
 .spanEjemplos{
-    color: #cea166;
+    color: #ca7f1c;
 }
 .spanConclusion{
-    color: #d04ed6;
+    color: #f060f8;
 }
-.spanContenido{
-    color: #000000;
-}
+
+
 /* ¿Vieron el rectangulín que se mueve por la nav? Estas son las propiedades de "cómo se vé". Para las ordenes "cómo y cuando se mueve", fíjense en el archivo script.js */
 
 .cosito{
@@ -173,33 +175,10 @@ span{
     transition: all 0.5s ease;
 }
 
-/* imágenes */
+/* imágenes! */
 
 img{
     align-items: center;
     width: max-content;
     height: max-content;
 }
-
-/* boton alto contraste (lo van a reconocer por la nomenclatura que es Halcón mal escrito jajs) */
-
-#alconBox{
-    background: yellow;
-    display:block;
-    width: 400px;
-    height: 100px;
-    margin: auto;
-    float: left;
-    align-content: center;
-    justify-content: center;
-}
-.alconUp{
-    font-size: 16px;
-    font-weight: bold;   
-}
-
-.alconDown{
-    font-size: 16px;
-    font-weight: bold;   
-}
-
